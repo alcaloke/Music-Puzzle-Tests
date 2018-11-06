@@ -7,7 +7,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
+  //createCanvas(displayWidth, displayHeight);
+  fullscreen();
   loop.loop();
   loop.disconnect();
   amplitude = new p5.Amplitude;
