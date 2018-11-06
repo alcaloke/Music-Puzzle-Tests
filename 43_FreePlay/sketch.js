@@ -8,19 +8,19 @@ function preload() {
 let loop2on = false;
 let e = 1;
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
-document.ontouchmove = function(event) {
-    event.preventDefault();
-};
+// document.ontouchmove = function(event) {
+//     event.preventDefault();
+// };
 
 function touchStarted() {
-	var fs = fullscreen();
-  	if (!fs) {
-    	fullscreen(true);
-  	}
+	// var fs = fullscreen();
+  	// if (!fs) {
+    	// fullscreen(true);
+  	// }
 	
 	if (loop1.isPlaying()) {
 		loop1.stop();
