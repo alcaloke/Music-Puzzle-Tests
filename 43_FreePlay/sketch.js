@@ -30,6 +30,13 @@ function changeBG() {
   background(color('navy'));
 }
 
+function touchStarted () {
+  var fs = fullscreen();
+  if (!fs) {
+    fullscreen(true);
+  }
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(60);
