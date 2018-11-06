@@ -8,6 +8,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  fullscreen();
   loop.loop();
   loop.disconnect();
   amplitude = new p5.Amplitude;
@@ -15,13 +16,6 @@ function setup() {
   loop.connect(filter);
 
   setInterval(genRan, 526 /8 );
-}
-
-function touchStarted () {
-  var fs = fullscreen();
-  if (!fs) {
-    fullscreen(true);
-  }
 }
 
 let hu = 450;
