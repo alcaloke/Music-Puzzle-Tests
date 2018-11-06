@@ -9,6 +9,11 @@ let loop2on = false;
 let e = 1;
 
 function mousePressed() {
+	var fs = fullscreen();
+  	if (!fs) {
+    	fullscreen(true);
+  	}
+	
 	if (loop1.isPlaying()) {
 		loop1.stop();
 		loop2.loop();
@@ -28,13 +33,6 @@ function mousePressed() {
 
 function changeBG() {
   background(color('navy'));
-}
-
-function touchStarted () {
-  var fs = fullscreen();
-  if (!fs) {
-    fullscreen(true);
-  }
 }
 
 function setup() {
