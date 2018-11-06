@@ -16,7 +16,7 @@ document.ontouchmove = function(event) {
     event.preventDefault();
 };
 
-function mousePressed() {
+function touchStarted() {
 	var fs = fullscreen();
   	if (!fs) {
     	fullscreen(true);
