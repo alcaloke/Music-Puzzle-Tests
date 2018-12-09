@@ -16,7 +16,7 @@ function setup() {
 let r = 150;
 let dr = 0.25;
 
-let radius = 500;
+let radius = 50;
 let dradius = 1.75;
 
 let filter, freq, res;
@@ -48,7 +48,7 @@ function draw() {
 	}
 
 	radius += dradius;
-	if (radius >= 1500 || radius <= 500) {
+	if (radius >= 150 || radius <= 50) {
 		dradius *= -1;
 	}
 
@@ -58,7 +58,7 @@ function draw() {
 	blue = 255 * blueOff;
 	// print(blue);
 
-	freq = map(radius, 500, 1500, 10, 12000);
+	freq = map(radius, 50, 150, 10, 12000);
 	filter.freq(freq);
 	res = 12;
 	filter.res(res);
