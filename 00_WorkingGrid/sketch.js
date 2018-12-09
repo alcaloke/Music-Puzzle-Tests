@@ -3,7 +3,7 @@ function preload() {
 }
 
 function setup() {
-	createCanvas(windowHeight*4/5, windowHeight);
+	createCanvas(windowWidth, windowHeight);
 
 	amplitude = new p5.Amplitude();
 	filter = new p5.LowPass();
